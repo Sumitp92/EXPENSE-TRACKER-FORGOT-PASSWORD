@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense</title>
+</head>
+<body>
+    <div class="Expense">
+        <form id="expense-form" method="post" action="/api/expenses">
+            <label for="amount">Choose expense amount</label>
+            <input type="number" id="amount" placeholder="Amount" required />
+        
+            <label for="description">Choose description</label>
+            <input type="text" id="description" placeholder="Description" required />
+        
+            <label for="category">Choose category</label>
+            <select id="category" name="category" required>
+                <option value="" disabled selected>Select a category</option>
+                <option value="category1">Salary</option>
+                <option value="category2">Food</option>
+                <option value="category3">Petrol</option>
+            </select>
+    
+            <button type="submit" id="submit-btn">Add Expense</button>
+        </form>
+        <div id="premium-message"></div>
+        <button id="buy-premium">Buy Premium</button>
+
+        <button id="show-leaderboard">Show Leaderboard</button>
+        <ul id="leaderboard-list"></ul>
+        <script id="razorpay-checkout-js"src="https://checkout.razorpay.com/v1/checkout.js"></script>
+        <ul id="expense-list"></ul>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="script.js"></script>
+</body>
+</html>

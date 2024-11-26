@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <form id="LoginForm" method="post">
+        <label for="email">Enter Your Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        <button type="submit" id="login">Login</button>
+    </form> 
+
+    <button id="forgotPasswordBtn">Forgot Password?</button>
+    <button id="newUserBtn">New User? Signup</button>
+    
+<form id="ForgotPasswordForm" style="display: none; margin-top: 20px;">
+        <label for="forgotEmail">Enter Your Email for Password Reset:</label>
+        <input type="email" id="forgotEmail" name="forgotEmail" placeholder="Enter your email" required>
+        <button type="submit" id="sendEmail">Send Reset Link</button>
+    </form>
+
+  
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
